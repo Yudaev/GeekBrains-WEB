@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
-    <a href="index.html">Главная</a><br>
-    <a href="catalog/catalog.html">Каталог</a><br>
-    <a href="contact.html">Контакты</a>
+    <ul class="menu">
+        <li class="heading">Меню</li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog/catalog.html">Каталог</a></li>
+        <li><a href="contact.html">Контакты</a></li>
+    </ul>
     <hr>
     <h2>Напишите нам</h2>
     <form>
-        <label>Имя: <input type="text" size="30" placeholder="Александр"></label><br><br>
-        <label>E-mail: <input type="email" size="30" placeholder="admin@ya.ru"></label><br><br>
-        <label>Тема: <input type="text" size="30" placeholder="Хочу купить рубашку"></label><br><br>
-        <label>Обращение: <textarea rows="10" cols="45"></textarea></label><br><br>
-        <label>Вложение: <input type="file"></label><br><br>
+        <label><h4>Full name<sup>*</sup>:</h4><input type="text" placeholder="e.g. robert smith"></label><br>
+        <label><h4>email<sup>*</sup>:</h4> <input type="email" placeholder="e.g. name@nome.com"></label><br>
+        <label><h4>company:</h4> <input type="text" placeholder="e.g. your company (optional)"></label><br>
+        <label><h4>subject<sup>*</sup>:</h4> <input type="text" placeholder="e.g. your company (optional)"></label><br>
+        <label><h4>message:</h4> <textarea></textarea></label><br><br>
+        <label><h4>Вложение:</h4> <input type="file"></label><br><br>
         <input type = "submit" value = "Отправить" >
         <input type = "reset" value = "Очистить" >
     </form>
