@@ -43,14 +43,6 @@ h1.product_name {
     text-align: left;
 }
 
-.product_page_heading {
-    font-size: 12px;
-    color: black;
-    text-transform: uppercase;
-    text-align: left;
-    font-weight: 100;
-}
-
 .quick {
     font-size: 12px;
     color: rgb(112, 112, 112);
@@ -122,14 +114,28 @@ caption {
 }
 
 .product_view {
-    border: 2px solid #333333;
+    border: 0px;
     border-collapse: collapse;
+
+}
+
+.product_page_heading {
+    font-size: 12px;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 100;
 }
 
 .product_view td {
-    border: 2px solid #333333;
+    border: 0px;
+}
+
+.product_view tr {
+    border-bottom: #d6d4d4 solid 1px;
 }
 
 .active_td {
     background: #26d2fc;
+    padding: 10px;
 }
