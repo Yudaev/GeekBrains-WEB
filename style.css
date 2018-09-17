@@ -10,11 +10,14 @@ body {
 .header{
     width: 100%;
     background: #abeafa;
+    height: 700px;
 }
 
 .header_content{
     width: 1170px;
     margin: 0 auto;
+    background: url(img/surfhouse_logo.png) 69px 24px no-repeat #abeafa;
+    height: 700px;
 }
 
 .main {
@@ -108,12 +111,21 @@ textarea {
 
 .footer_top_bg{
     width: 100%;
+    min-width: 1170px;
     background: #373737;
 }
 
 .footer_top_content{
     width: 1170px;
+    height: 300px;
     margin: 0 auto;
+    white-space: nowrap;
+}
+
+.footer_top_column {
+    display: inline-block;
+    width: 20%;
+    white-space: normal;
 }
 
 .footer_heading {
@@ -126,13 +138,39 @@ textarea {
 .footer_bottom_bg {
     background: #333333;
     width: 100%;
+    min-width: 1170px;
 }
 
 .footer_bottom_content {
     width: 1170px;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 0;
+    height: 47px;
+    font-size: 0;
+    display: flex;
+    align-items: center;
 }
+
+.footer_bottom_content_left {
+    display: inline-block;
+    width: 50%;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer_bottom_content_right {
+    display: inline-block;
+    width: 50%;
+    font-size: 12px;
+    margin: 0;
+    text-align: right;
+}
+
+.footer_bottom_social {
+    filter: brightness(100);
+    margin-right: 15px;
+}
+
 
 caption {
     font-weight: bold;
