@@ -7,6 +7,7 @@ body {
 .container{
 
 }
+
 .header{
     width: 100%;
     background: #abeafa;
@@ -23,6 +24,8 @@ body {
 .main {
     width: 1170px;
     margin: 0 auto;
+    white-space: nowrap;
+    display: flex;
 }
 
 .menu{
@@ -31,7 +34,7 @@ body {
     font-size: 12pt;
     list-style-type: none;
     padding: 0;
-    width: 300px;
+    width: 270px;
 }
 
 .menu a{
@@ -76,26 +79,26 @@ h1.product_name {
     text-align: left;
 }
 
-input {
+.contact_form + input {
     width: 300px;
     height: 20px;
     border: 1px solid #efefef;
 }
 
-input:focus, textarea:focus {
+.contact_form + input:focus, textarea:focus {
     background: #f2fcff;
     outline: none;
 }
 
-input.submit_button{
+.contact_form + input.submit_button{
     width: 150px;
 }
 
-input.reset_button{
+.contact_form + input.reset_button{
     width: 150px;
 }
 
-textarea {
+.contact_form + textarea {
     width: 300px;
     height: 120px;
     border: 1px solid #efefef;
@@ -212,3 +215,103 @@ caption {
     background: #26d2fc;
     padding: 10px;
 }
+
+/*Product page START*/
+
+.main_menu_column{
+    display: inline-block;
+    width: 270px;
+    white-space: normal;
+}
+
+.main_content_column{
+    display: inline-block;
+    width: 870px;
+    white-space: normal;
+    padding-left: 30px;
+}
+
+.quick_overview{
+    white-space: nowrap;
+    display: flex;
+}
+
+.quick_overview_img{
+    display: inline-block;
+    width: 370px;
+    white-space: normal;
+}
+
+.quick_overview_content{
+    display: inline-block;
+    width: 530px;
+    white-space: normal;
+}
+
+.poduct_page_main_img{
+    width: 370px;
+}
+
+.button_add_to_card{
+    width: 130px;
+    height: 48px;
+    background: #fb4d01;
+    color: white;
+    border: 0;
+}
+
+.button_add_to_card:hover:active:focus{
+    background: #fb1e01;
+    border: 0;
+    outline: none;
+ }
+
+.button_add_to_card:visited{
+    background: #fb4d01;
+    border: 0;
+    outline: none;
+}
+/*Product page END*/
+
+/*Catalog page START*/
+.catalog_elements{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.catalog_product{
+    width:270px;
+    height: 320px;
+    background: white;
+
+}
+
+.catalog_product_img{
+    width: 250px;
+}
+
+.product_photo{
+    padding: 10px;
+}
+
+.product_caption{
+    padding: 10px;
+    white-space: nowrap;
+    display: flex;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.product_title{
+    display: inline-block;
+    width: 70%;
+    font-size: 14px;
+}
+
+.product_prices{
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    font-size: 18px;
+}
+/*Catalog page END*/
