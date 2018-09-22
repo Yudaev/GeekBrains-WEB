@@ -5,6 +5,7 @@ body {
     background: #f8f8f8;
     font-family: 'Roboto', sans-serif;
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -17,22 +18,46 @@ a {
 
 .header{
     width: 100%;
+    min-width: 1170px;
     background: #abeafa;
     height: 700px;
 }
 
-.header_content{
+.header_content_top{
     width: 1170px;
     margin: 0 auto;
-    background: url(img/surfhouse_logo.png) 69px 24px no-repeat transparent;
-    height: 700px;
+    height: 135px;
+}
+
+.header_content_top .logo{
+    background: url(img/surfhouse_logo.png) no-repeat;
+    display: block;
+    width: 125px;
+    height: 111px;
+    float: left;
+    margin-top: 24px;
+    margin-left: 69px;
+}
+
+.header_content_top_social {
+    filter: brightness(100);
+    float: right;
+    display: block;
+    margin-top: 50px;
+    margin-right: 64px;
+}
+
+.header_content_top_social img{
+    margin-left: 11px;
 }
 
 .main {
     width: 1170px;
     margin: 0 auto;
-    white-space: nowrap;
     display: flex;
+    white-space: nowrap;
+    position: relative;
+    top: -20px;
 }
 
 .menu{
@@ -42,6 +67,7 @@ a {
     list-style-type: none;
     padding: 0;
     width: 270px;
+    margin: 0 auto;
 }
 
 .menu a{
@@ -249,7 +275,7 @@ li.footer_heading{
     text-align: right;
 }
 
-.footer_bottom_social {
+.footer_bottom_content_right a img {
     filter: brightness(100);
     margin-right: 15px;
 }
